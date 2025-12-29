@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Harshil Thakkar - Full-Stack Web Developer Portfolio">
+    <meta name="keywords" content="Full-Stack Developer, Web Developer, Django, React, Python, JavaScript">
+    <meta name="author" content="Harshil Thakkar">
+    <title>Harshil Thakkar | Full-Stack Web Developer</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Harshil Thakkar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <!-- Animated Gradient Background -->
+        <div class="hero-background"></div>
+        
+        <!-- Floating Tech Icons -->
+        <div class="floating-icons">
+            <i class="fab fa-html5" style="--delay: 0s; --duration: 20s;"></i>
+            <i class="fab fa-css3-alt" style="--delay: 2s; --duration: 18s;"></i>
+            <i class="fab fa-js" style="--delay: 4s; --duration: 22s;"></i>
+            <i class="fab fa-python" style="--delay: 1s; --duration: 19s;"></i>
+            <i class="fab fa-react" style="--delay: 3s; --duration: 21s;"></i>
+            <i class="fab fa-django" style="--delay: 5s; --duration: 17s;"></i>
+            <i class="fab fa-git-alt" style="--delay: 2.5s; --duration: 20s;"></i>
+            <i class="fab fa-node-js" style="--delay: 4.5s; --duration: 18s;"></i>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-10 mx-auto text-center">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="hero-greeting">Hi, I'm</span><br>
+                            <span class="typewriter-text highlight" id="typewriter"></span>
+                        </h1>
+                        <h2 class="hero-subtitle fade-in-delay-1">Full-Stack Web Developer</h2>
+                        <p class="hero-tagline fade-in-delay-2">Building scalable web applications with modern technologies</p>
+                        <div class="hero-buttons fade-in-delay-3">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3">View Projects</a>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="about-image-wrapper">
+                        <div class="profile-photo">
+                            <i class="fas fa-user"></i>
+                            <div class="photo-placeholder-text">Your Photo</div>
+                        </div>
+                        <div class="strengths-badges">
+                            <span class="strength-badge"><i class="fas fa-lightbulb"></i> Problem Solver</span>
+                            <span class="strength-badge"><i class="fas fa-users"></i> Team Player</span>
+                            <span class="strength-badge"><i class="fas fa-rocket"></i> Fast Learner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="about-content">
+                        <h3 class="mb-4">Hello! I'm Harshil</h3>
+                        <p class="lead">I'm a Computer Engineering graduate and a passionate Full-Stack Web Developer with a strong foundation in both frontend and backend technologies.</p>
+                        <p>I specialize in building robust web applications using modern frameworks and technologies. My expertise lies in creating seamless user experiences while ensuring scalable and efficient backend systems.</p>
+                        <p>I'm particularly interested in backend systems, database design, and solving complex problems. I enjoy working on projects that challenge me and help me grow as a developer.</p>
+                        <div class="about-details mt-4">
+                            <div class="detail-item">
+                                <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                                <p>Bachelor's in Computer Engineering</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-code"></i> Focus Areas</h4>
+                                <p>Backend Development, Database Design, REST APIs</p>
+                            </div>
+                            <div class="detail-item">
+                                <h4><i class="fas fa-bullseye"></i> Career Goal</h4>
+                                <p>To secure a full-stack or backend developer role in a growing tech company</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Languages -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Languages</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">C</span>
+                            <span class="skill-tag">C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>Frontend</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HTML</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Bootstrap </span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Frameworks -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>Backend & Frameworks</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">Django REST</span>
+                            <span class="skill-tag">Flask</span>
+                            <span class="skill-tag">REST APIs</span>
+                           
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>Database</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">SQLite</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Tools & Platforms</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Cursor</span>
+                            <span class="skill-tag">Github Copilot</span>
+                            <span class="skill-tag">Antigravity</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Concepts -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Core Concepts</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">OOP</span>
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">Some of my recent work</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Project 1: Fake News Detection -->
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category">Data Science</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Fake News Detection System</h3>
+                            <ul class="project-details">
+                                <li>Built a Flask web app to classify news using TF-IDF and Passive Aggressive Classifier.</li>
+                                <li>Integrated NewsAPI for real-time article analysis and stored results using MySQL + SQLAlchemy.</li>
+                                <li>Delivered a full-stack solution combining NLP processing with backend data handling.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Flask</span>
+                                <span class="tech-badge">NLP</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">NewsAPI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Online Exam Platform -->
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category">Full Stack</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Online Examination Platform with Proctoring</h3>
+                            <ul class="project-details">
+                                <li>Created an online exam system with real-time face detection using TensorFlow.js.</li>
+                                <li>Implemented MCQ exams, user authentication, activity monitoring, and exam history tracking.</li>
+                                <li>Built a responsive UI with Bootstrap and managed exam data using MySQL.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">TensorFlow.js</span>
+                                <span class="tech-badge">Bootstrap</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Djang</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Pharmacy E-commerce Platform -->
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category">E-commerce</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Online Pharmacy E-commerce Platform</h3>
+                            <ul class="project-details">
+                                <li>Developed a pharmacy e-commerce website with product catalog, search, filters, cart, and wishlist.</li>
+                                <li>Added user authentication, order management, QR payment, and Cash on Delivery features.</li>
+                                <li>Built admin panel for product CRUD operations with a responsive and clean UI.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-badge">Django</span>
+                                <span class="tech-badge">Javascript</span>
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">MySQL</span>
+                                <span class="tech-badge">DRF</span>
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Spam Email Detection -->
+                <div class="col-lg-6 mb-4">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <span class="project-category">Machine Learning</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Email Spam Detection Web Application</h3>
+                            <ul class="project-details">
+                                <li>Built a spam classifier using Logistic Regression and TF-IDF for email analysis.</li>
+                                <li>Built a secure Flask web app with user authentication and password hashing.</li>
+                                <li>Designed a responsive UI for real-time Spam vs. Ham (Not Spam) classification.</li>
+                            </ul>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Flask</span>
+                                <span class="tech-badge">Scikit-learn</span>
+                                <span class="tech-badge">TF-IDF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">May 2025 (15 Days)</div>
+                                <h3><i class="fas fa-briefcase"></i> Software Development Trainee</h3>
+                                <h4>TatvaSoft, Ahmedabad</h4>
+                                <p class="timeline-description">
+                                    Participated in a 15-day intensive internship training program focused on .NET technologies.
+                                </p>
+                                <div class="timeline-tech">
+                                    <h5>Technologies Learned:</h5>
+                                    <div class="tech-tags">
+                                        <span class="tech-tag">.NET</span>
+                                        <span class="tech-tag">PostgreSQL</span>
+                                        <span class="tech-tag">Software Development</span>
+                                        <span class="tech-tag">Debugging</span>
+                                    </div>
+                                </div>
+                                <div class="timeline-responsibilities">
+                                    <h5>Key Learnings:</h5>
+                                    <ul>
+                                        <li>Learned the basics of .NET and PostgreSQL as part of internship training</li>
+                                        <li>Assisted with simple development tasks and understood coding best practices</li>
+                                        <li>Gained exposure to software development workflows and debugging</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Bachelor of Engineering in Computer Engineering</h3>
+                            <h4>KSV University / LDRP-ITR</h4>
+                            <p class="education-year">2022 - 2026</p>
+                            <p class="education-description">
+                                Completed Bachelor of Engineering in Computer Engineering with coursework in
+                                Data Structures, Database Management Systems, Software Engineering, and Web Technologies.
+                                Built academic projects focusing on backend development, REST APIs, and database design.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                    <p class="section-subtitle">I'm open to opportunities and collaborations</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-wrapper">
+                        <div class="row">
+                            <div class="col-lg-6 mb-4">
+                                <div class="contact-info">
+                                    <h3>Let's Connect</h3>
+                                    <p>Feel free to reach out if you have any questions or opportunities!</p>
+                                    <div class="contact-links">
+                                        <a href="mailto:harshilthakkar163@gmail.com" class="contact-link">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>harshilthakkar163@gmail.com</span>
+                                        </a>
+                                        <a href="https://www.linkedin.com/in/harshil-thakkar-6a251b300/" class="contact-link" target="_blank">
+                                            <i class="fab fa-linkedin"></i>
+                                            <span>LinkedIn Profile</span>
+                                        </a>
+                                        <a href="https://github.com/harshilThakkar04" class="contact-link" target="_blank">
+                                            <i class="fab fa-github"></i>
+                                            <span>GitHub Profile</span>
+                                        </a>
+                                        <a href="tel:+918160725770" class="contact-link">
+                                            <i class="fas fa-phone"></i>
+                                            <span>+91 8160725770</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <form id="contactForm" class="contact-form">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                        <div class="error-message"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                        <div class="error-message"></div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+                                        <div class="error-message"></div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="social-links mb-4">
+                        <a href="https://github.com/harshilThakkar04" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/harshil-thakkar-6a251b300" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:harshilthakkar163@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <p class="copyright">&copy; 2025 Harshil Thakkar. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
+

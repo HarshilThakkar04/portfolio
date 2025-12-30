@@ -525,6 +525,36 @@ a {
 
 /* Removed .bg-light - all sections now use transparent background to inherit global dark theme */
 
+.hero-name {
+    font-family: 'Poppins', sans-serif; /* Ensuring modern font */
+    font-size: 4rem;
+    font-weight: 600; /* Medium-bold for elegance, not chunky */
+    
+    /* Gradient Text */
+    background: linear-gradient(135deg, #a78bfa 0%, #38bdf8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Glassmorphism Background */
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(5px);
+    border-radius: 50px; /* Pill shape */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    
+    /* Animation */
+    animation: fadeInUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-name::after {
+    /* Removing the underline for this minimal style */
+    content: none;
+}
+
 .section-title {
     font-size: 2.8rem;
     font-weight: 700;
